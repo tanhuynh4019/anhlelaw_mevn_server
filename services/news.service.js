@@ -203,7 +203,6 @@ module.exports = class NewsService {
         return arrID.forEach(id => {
             this.getByID(id).
             then(news => {
-
                 switch (status) {
                     case actionsStatus.ACTIVE_TRUE:
                         news.active = true;
